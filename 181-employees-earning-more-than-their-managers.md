@@ -23,5 +23,6 @@ Given the `Employee` table, write a SQL query that finds out employees who earn 
 ```
 
 ```sql
+SELECT e.Name as Employee FROM Employee e JOIN Employee m on e.ManagerId = m.Id and e.Salary > m.Salary;
 
 ```
